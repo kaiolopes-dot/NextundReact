@@ -28,10 +28,18 @@
       }
 
       function Homepage() {
+        const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+        
         return (
-        <div>
-          <Header title="React Scheibe"/>
-        </div>);
+          <div>
+            <Header title="React Scheibe"/>
+            <ul>
+              {names.map((name) => (
+                <li>{name}</li>
+              ))}
+            </ul>
+          </div>
+        );
       }
 
       const root = createRoot(domNode);
