@@ -19,15 +19,18 @@
  
       const domNode = document.getElementById('app');
 
-      function Header() {
-        return <h1>Develop. Preview. Ship.</h1>;
+      function Header( {title} ) {
+        return(
+          <h1>
+            {title}
+          </h1>
+        );
       }
 
       function Homepage() {
         return (
         <div>
-          <Header/>
-          <Header/>
+          <Header title="React Scheibe"/>
         </div>);
       }
 
